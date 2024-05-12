@@ -104,21 +104,7 @@ def main():
             logout(user)
         else:
             print("Invalid choice. Please try again.")
-
-
-'''
-def main():
-    args = sys.argv
-
-    peer = Peer(args[1], args[2], int(args[3]), database_param, int(args[5]), int(args[6]))
-    # Start the server
-    threading.Thread(target=peer.start_server).start()
-
-    peer.set_other_peer_port(int(args[4]))
-
-    # Run the GUI
-    peer.run()
-'''
+            
 
 if __name__ == "__main__":
     main()
