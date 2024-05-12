@@ -1,0 +1,12 @@
+FROM postgres:latest
+
+# Set environment variables
+ENV POSTGRES_DB=chat
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=password
+
+# Expose the PostgreSQL port
+EXPOSE 5432
+
+# Run PostgreSQL
+CMD ["postgres"]
